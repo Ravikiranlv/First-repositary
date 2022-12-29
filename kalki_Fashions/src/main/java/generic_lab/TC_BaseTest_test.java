@@ -16,7 +16,7 @@ public class TC_BaseTest_test {
 	@BeforeMethod
 	public void Login()
 	{
-		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver1.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://www.naukri.com/registration/createAccount");

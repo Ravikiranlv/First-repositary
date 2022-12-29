@@ -13,7 +13,7 @@ public class TC_BaseTest1_Test {
 	
 	@BeforeClass
 	public void Browser_Setup(){
-		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver1.exe");
 		driver=new ChromeDriver();
 		Reporter.log("Browser is launched succssfully");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

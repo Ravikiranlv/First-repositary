@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
+    <line>
+      <![CDATA[Apllication is launching succssfully]]>
+    </line>
+    <line>
+      <![CDATA[window is successfully maximized]]>
+    </line>
     <line>
       <![CDATA[Browser is launched succssfully]]>
     </line>
@@ -26,88 +32,47 @@
       <![CDATA[Window is maximized succssfully]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="215595" started-at="2022-08-03T14:49:16 IST" finished-at="2022-08-03T14:52:51 IST">
+  <suite name="Suite" duration-ms="19869" started-at="2022-12-20T11:32:19 IST" finished-at="2022-12-20T11:32:39 IST">
     <groups>
-      <group name="smoke">
-        <method signature="TC_KAlkifashion_002_Test.login()[pri:0, instance:testCase.TC_KAlkifashion_002_Test@3e9b1010]" name="login" class="testCase.TC_KAlkifashion_002_Test"/>
-        <method signature="TC_KalkiFash_001_Test.Login()[pri:0, instance:testCase.TC_KalkiFash_001_Test@6536e911]" name="Login" class="testCase.TC_KalkiFash_001_Test"/>
-        <method signature="TC_Kalkifashion_004_Test.login()[pri:0, instance:testCase.TC_Kalkifashion_004_Test@18eed359]" name="login" class="testCase.TC_Kalkifashion_004_Test"/>
-        <method signature="TC_kalkiFash_003_Test.login()[pri:0, instance:testCase.TC_kalkiFash_003_Test@520a3426]" name="login" class="testCase.TC_kalkiFash_003_Test"/>
-      </group> <!-- smoke -->
+      <group name="regrission">
+        <method signature="TC_NaukridotCom_001_Test.ScriptFlow()[pri:0, instance:tasks.TC_NaukridotCom_001_Test@2b2948e2]" name="ScriptFlow" class="tasks.TC_NaukridotCom_001_Test"/>
+      </group> <!-- regrission -->
     </groups>
-    <test name="Test" duration-ms="215595" started-at="2022-08-03T14:49:16 IST" finished-at="2022-08-03T14:52:51 IST">
-      <class name="testCase.TC_kalkiFash_003_Test">
-        <test-method status="PASS" signature="Browser_Setup()[pri:0, instance:testCase.TC_kalkiFash_003_Test@520a3426]" name="Browser_Setup" is-config="true" duration-ms="3573" started-at="2022-08-03T14:49:57 IST" finished-at="2022-08-03T14:50:01 IST">
+    <test name="Test" duration-ms="19869" started-at="2022-12-20T11:32:19 IST" finished-at="2022-12-20T11:32:39 IST">
+      <class name="tasks.TC_NaukridotCom_001_Test">
+        <test-method status="PASS" signature="Login()[pri:0, instance:tasks.TC_NaukridotCom_001_Test@2b2948e2]" name="Login" is-config="true" duration-ms="7061" started-at="2022-12-20T11:32:19 IST" finished-at="2022-12-20T11:32:26 IST">
           <reporter-output>
             <line>
-              <![CDATA[Browser is launched succssfully]]>
+              <![CDATA[Apllication is launching succssfully]]>
             </line>
             <line>
-              <![CDATA[Window is maximized succssfully]]>
+              <![CDATA[window is successfully maximized]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Browser_Setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testCase.TC_kalkiFash_003_Test@520a3426]" name="login" duration-ms="50758" started-at="2022-08-03T14:50:01 IST" finished-at="2022-08-03T14:50:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="Browser_tear_down()[pri:0, instance:testCase.TC_kalkiFash_003_Test@520a3426]" name="Browser_tear_down" is-config="true" duration-ms="3661" started-at="2022-08-03T14:50:52 IST" finished-at="2022-08-03T14:50:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser_tear_down -->
-      </class> <!-- testCase.TC_kalkiFash_003_Test -->
-      <class name="testCase.TC_Kalkifashion_004_Test">
-        <test-method status="PASS" signature="Browser_Setup()[pri:0, instance:testCase.TC_Kalkifashion_004_Test@18eed359]" name="Browser_Setup" is-config="true" duration-ms="4562" started-at="2022-08-03T14:50:55 IST" finished-at="2022-08-03T14:51:00 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Browser is launched succssfully]]>
-            </line>
-            <line>
-              <![CDATA[Window is maximized succssfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Browser_Setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testCase.TC_Kalkifashion_004_Test@18eed359]" name="login" duration-ms="39749" started-at="2022-08-03T14:51:00 IST" finished-at="2022-08-03T14:51:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="Browser_tear_down()[pri:0, instance:testCase.TC_Kalkifashion_004_Test@18eed359]" name="Browser_tear_down" is-config="true" duration-ms="4324" started-at="2022-08-03T14:51:40 IST" finished-at="2022-08-03T14:51:44 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Browser_tear_down -->
-      </class> <!-- testCase.TC_Kalkifashion_004_Test -->
-      <class name="testCase.TC_KalkiFash_001_Test">
-        <test-method status="PASS" signature="Browser_Setup()[pri:0, instance:testCase.TC_KalkiFash_001_Test@6536e911]" name="Browser_Setup" is-config="true" duration-ms="3412" started-at="2022-08-03T14:49:16 IST" finished-at="2022-08-03T14:49:19 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Browser is launched succssfully]]>
-            </line>
-            <line>
-              <![CDATA[Window is maximized succssfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Browser_Setup -->
-        <test-method status="FAIL" signature="Login()[pri:0, instance:testCase.TC_KalkiFash_001_Test@6536e911]" name="Login" duration-ms="34538" started-at="2022-08-03T14:49:19 IST" finished-at="2022-08-03T14:49:54 IST">
-          <exception class="org.openqa.selenium.WebDriverException">
+        </test-method> <!-- Login -->
+        <test-method status="FAIL" signature="ScriptFlow()[pri:0, instance:tasks.TC_NaukridotCom_001_Test@2b2948e2]" name="ScriptFlow" duration-ms="10044" started-at="2022-12-20T11:32:26 IST" finished-at="2022-12-20T11:32:36 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[unknown error: cannot determine loading status
-from unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.134)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='name']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-VO7LGM5', ip: '192.168.213.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'DESKTOP-VO7LGM5', ip: '10.10.61.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\ravik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14198}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ef060facf45069aa1673055d46abcf7b]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ravik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:2840}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aa1d674684e209c5d8a66d253ff4fee4
+*** Element info: {Using=xpath, value=//input[@id='name']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: unexpected command response
-  (Session info: chrome=103.0.5060.134)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='name']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-VO7LGM5', ip: '192.168.213.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+System info: host: 'DESKTOP-VO7LGM5', ip: '10.10.61.27', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\ravik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:14198}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ef060facf45069aa1673055d46abcf7b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ravik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:2840}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aa1d674684e209c5d8a66d253ff4fee4
+*** Element info: {Using=xpath, value=//input[@id='name']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -118,8 +83,11 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at testCase.TC_KalkiFash_001_Test.Login(TC_KalkiFash_001_Test.java:15)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at tasks.TC_NaukridotCom_001_Test.ScriptFlow(TC_NaukridotCom_001_Test.java:14)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -154,17 +122,29 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Browser_tear_down()[pri:0, instance:testCase.TC_KalkiFash_001_Test@6536e911]" name="Browser_tear_down" is-config="true" duration-ms="3713" started-at="2022-08-03T14:49:54 IST" finished-at="2022-08-03T14:49:57 IST">
+        </test-method> <!-- ScriptFlow -->
+        <test-method status="PASS" signature="closeLoign()[pri:0, instance:tasks.TC_NaukridotCom_001_Test@2b2948e2]" name="closeLoign" is-config="true" duration-ms="2730" started-at="2022-12-20T11:32:36 IST" finished-at="2022-12-20T11:32:39 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Browser_tear_down -->
-      </class> <!-- testCase.TC_KalkiFash_001_Test -->
-      <class name="testCase.TC_KAlkifashion_002_Test">
-        <test-method status="PASS" signature="Browser_Setup()[pri:0, instance:testCase.TC_KAlkifashion_002_Test@3e9b1010]" name="Browser_Setup" is-config="true" duration-ms="3916" started-at="2022-08-03T14:51:44 IST" finished-at="2022-08-03T14:51:48 IST">
+        </test-method> <!-- closeLoign -->
+      </class> <!-- tasks.TC_NaukridotCom_001_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+  <suite name="Suite (0)" duration-ms="68040" started-at="2022-12-20T11:32:39 IST" finished-at="2022-12-20T11:33:47 IST">
+    <groups>
+      <group name="smoke">
+        <method signature="TC_KAlkifashion_002_Test.login()[pri:0, instance:testCase.TC_KAlkifashion_002_Test@57855c9a]" name="login" class="testCase.TC_KAlkifashion_002_Test"/>
+        <method signature="TC_KalkiFash_001_Test.Login()[pri:0, instance:testCase.TC_KalkiFash_001_Test@6321e813]" name="Login" class="testCase.TC_KalkiFash_001_Test"/>
+        <method signature="TC_Kalkifashion_004_Test.login()[pri:0, instance:testCase.TC_Kalkifashion_004_Test@22a67b4]" name="login" class="testCase.TC_Kalkifashion_004_Test"/>
+        <method signature="TC_kalkiFash_003_Test.login()[pri:0, instance:testCase.TC_kalkiFash_003_Test@79be0360]" name="login" class="testCase.TC_kalkiFash_003_Test"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Test" duration-ms="68040" started-at="2022-12-20T11:32:39 IST" finished-at="2022-12-20T11:33:47 IST">
+      <class name="testCase.TC_kalkiFash_003_Test">
+        <test-method status="PASS" signature="Browser_Setup()[pri:0, instance:testCase.TC_kalkiFash_003_Test@79be0360]" name="Browser_Setup" is-config="true" duration-ms="1881" started-at="2022-12-20T11:32:55 IST" finished-at="2022-12-20T11:32:57 IST">
           <reporter-output>
             <line>
               <![CDATA[Browser is launched succssfully]]>
@@ -174,15 +154,75 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
             </line>
           </reporter-output>
         </test-method> <!-- Browser_Setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testCase.TC_KAlkifashion_002_Test@3e9b1010]" name="login" duration-ms="59654" started-at="2022-08-03T14:51:48 IST" finished-at="2022-08-03T14:52:48 IST">
+        <test-method status="PASS" signature="login()[pri:0, instance:testCase.TC_kalkiFash_003_Test@79be0360]" name="login" duration-ms="9056" started-at="2022-12-20T11:32:57 IST" finished-at="2022-12-20T11:33:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="Browser_tear_down()[pri:0, instance:testCase.TC_KAlkifashion_002_Test@3e9b1010]" name="Browser_tear_down" is-config="true" duration-ms="3706" started-at="2022-08-03T14:52:48 IST" finished-at="2022-08-03T14:52:51 IST">
+        <test-method status="PASS" signature="Browser_tear_down()[pri:0, instance:testCase.TC_kalkiFash_003_Test@79be0360]" name="Browser_tear_down" is-config="true" duration-ms="3721" started-at="2022-12-20T11:33:06 IST" finished-at="2022-12-20T11:33:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_tear_down -->
+      </class> <!-- testCase.TC_kalkiFash_003_Test -->
+      <class name="testCase.TC_Kalkifashion_004_Test">
+        <test-method status="PASS" signature="Browser_Setup()[pri:0, instance:testCase.TC_Kalkifashion_004_Test@22a67b4]" name="Browser_Setup" is-config="true" duration-ms="1988" started-at="2022-12-20T11:33:10 IST" finished-at="2022-12-20T11:33:12 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is launched succssfully]]>
+            </line>
+            <line>
+              <![CDATA[Window is maximized succssfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Browser_Setup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testCase.TC_Kalkifashion_004_Test@22a67b4]" name="login" duration-ms="7113" started-at="2022-12-20T11:33:12 IST" finished-at="2022-12-20T11:33:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="Browser_tear_down()[pri:0, instance:testCase.TC_Kalkifashion_004_Test@22a67b4]" name="Browser_tear_down" is-config="true" duration-ms="5476" started-at="2022-12-20T11:33:19 IST" finished-at="2022-12-20T11:33:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_tear_down -->
+      </class> <!-- testCase.TC_Kalkifashion_004_Test -->
+      <class name="testCase.TC_KalkiFash_001_Test">
+        <test-method status="PASS" signature="Browser_Setup()[pri:0, instance:testCase.TC_KalkiFash_001_Test@6321e813]" name="Browser_Setup" is-config="true" duration-ms="3048" started-at="2022-12-20T11:32:39 IST" finished-at="2022-12-20T11:32:42 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is launched succssfully]]>
+            </line>
+            <line>
+              <![CDATA[Window is maximized succssfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Browser_Setup -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:testCase.TC_KalkiFash_001_Test@6321e813]" name="Login" duration-ms="9499" started-at="2022-12-20T11:32:42 IST" finished-at="2022-12-20T11:32:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Browser_tear_down()[pri:0, instance:testCase.TC_KalkiFash_001_Test@6321e813]" name="Browser_tear_down" is-config="true" duration-ms="3735" started-at="2022-12-20T11:32:51 IST" finished-at="2022-12-20T11:32:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_tear_down -->
+      </class> <!-- testCase.TC_KalkiFash_001_Test -->
+      <class name="testCase.TC_KAlkifashion_002_Test">
+        <test-method status="PASS" signature="Browser_Setup()[pri:0, instance:testCase.TC_KAlkifashion_002_Test@57855c9a]" name="Browser_Setup" is-config="true" duration-ms="2096" started-at="2022-12-20T11:33:24 IST" finished-at="2022-12-20T11:33:26 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is launched succssfully]]>
+            </line>
+            <line>
+              <![CDATA[Window is maximized succssfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Browser_Setup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testCase.TC_KAlkifashion_002_Test@57855c9a]" name="login" duration-ms="16853" started-at="2022-12-20T11:33:26 IST" finished-at="2022-12-20T11:33:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="Browser_tear_down()[pri:0, instance:testCase.TC_KAlkifashion_002_Test@57855c9a]" name="Browser_tear_down" is-config="true" duration-ms="3574" started-at="2022-12-20T11:33:43 IST" finished-at="2022-12-20T11:33:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Browser_tear_down -->
       </class> <!-- testCase.TC_KAlkifashion_002_Test -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Suite (0) -->
 </testng-results>

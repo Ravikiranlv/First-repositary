@@ -9,7 +9,7 @@ import generic_lab.TC_BaseTest1_Test;
 public class TC_KalkiFash_001_Test extends TC_BaseTest1_Test {
 	@Test(groups = "smoke")
 	public void Login() {
-		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver1.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.shaadi.com/");

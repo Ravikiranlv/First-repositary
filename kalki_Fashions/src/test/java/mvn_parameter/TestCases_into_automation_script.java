@@ -23,7 +23,7 @@ public class TestCases_into_automation_script {
 	
 	@BeforeClass
 	public void Browserlaunch() {
-		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver1.exe");
 		driver=new ChromeDriver();	
 		Reporter.log("Browser is launched");
 		driver.manage().window().maximize();
@@ -41,8 +41,8 @@ public class TestCases_into_automation_script {
 		driver.findElement(By.xpath("//button[@id='wzrk-cancel']")).click();
 		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@aria-label='Close Notifications']")));
 		//driver.findElement(By.xpath("//span[@aria-label='Close Notifications']")).click();
-		Home_Page homePage = new Home_page();
-        homePage.getSearch().sendKeys("");
+		//Home_Page homePage = new Home_page();
+       // homePage.getSearch().sendKeys("");
        // WebElement searchtext = homePage.getSearch();
       //  assertTrue(searchtext.isDisplayed(), "homepage is not displayed");
 	}

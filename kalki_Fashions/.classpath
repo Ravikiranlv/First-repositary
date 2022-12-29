@@ -24,9 +24,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
 		<attributes>
-			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -56,5 +55,6 @@
 	<classpathentry kind="lib" path="testdata/slf4j-api-1.7.36.jar"/>
 	<classpathentry kind="lib" path="testdata/SparseBitSet-1.2.jar"/>
 	<classpathentry kind="lib" path="testdata/xmlbeans-5.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ravik/Downloads/jar_files/extentreports-3.1.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

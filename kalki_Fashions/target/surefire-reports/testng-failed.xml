@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" verbose="0" name="Test(failed)">
     <classes>
-      <class name="testCase.TC_KalkiFash_001_Test">
+      <class name="tasks.TC_NaukridotCom_001_Test">
         <methods>
           <include name="Login"/>
-          <include name="Browser_Setup"/>
-          <include name="Browser_tear_down"/>
+          <include name="ScriptFlow"/>
+          <include name="closeLoign"/>
         </methods>
-      </class> <!-- testCase.TC_KalkiFash_001_Test -->
+      </class> <!-- tasks.TC_NaukridotCom_001_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
