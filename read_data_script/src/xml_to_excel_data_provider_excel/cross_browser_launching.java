@@ -26,7 +26,7 @@ public class cross_browser_launching {
 	public void Browser_Setup(@Optional("chrome") String browserName) throws IOException {
 		System.out.println(browserName);
 		if (browserName.equalsIgnoreCase("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver1.exe");
 			driver = new ChromeDriver();
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", "./softwares/geckodriver.exe");
