@@ -11,11 +11,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class hidden_division {
+	public static JavascriptExecutor jse;
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.gecko.driver", "./softwares/geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
 		driver.navigate().to("https://www.makemytrip.com/");
 		LocalDateTime ldt=LocalDateTime.now().plusYears(9);
 		ldt.plusDays(15);
@@ -25,19 +26,19 @@ public class hidden_division {
 		int day = ldt.getDayOfMonth();                                                      
 		System.out.println(monthValue+ "-"+year+ "-"+day);
 		
-		WebDriverWait wait=new WebDriverWait(driver, 20);
+		WebDriverWait wait=new WebDriverWait(driver, 05);
 		//Thread.sleep(5000);
 		//wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@id='webklipper-publisher-widget-container-notification-close-div']")));
 		//driver.findElement(By.xpath("//a[@id='webklipper-publisher-widget-container-notification-close-div']")).click();
 		
-		driver.findElement(By.xpath("//span[@class='langCardClose']")).click();
+		driver.findElement(By.xpath("//span[@class='ic_circularclose_grey']")).click();
 		driver.findElement(By.xpath("//span[.='DEPARTURE']")).click();
 		Thread.sleep(3000);
-		JavascriptExecutor jse= (JavascriptExecutor) driver;
+		 jse= (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollBy(0,200);");
 		//WebDriverWait wait1=new WebDriverWait(driver, 10);
         //wait1.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[@class='close']")))).click();
-		selectDate(driver,"November",2022, 22);
+		selectDate(driver,"March",2023, 22);
 	}
 	public static void selectDate(WebDriver driver,String monthValue,int year,int day) throws InterruptedException
 	{
@@ -52,6 +53,6 @@ public class hidden_division {
 				driver.findElement(By.xpath("//span[@aria-label='Next Month']")).click();
 			}
 		}
-
+		jse.executeScript("window.scrollBy(0,-200);");
 	}
 }
