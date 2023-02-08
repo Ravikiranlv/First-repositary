@@ -17,7 +17,7 @@ public class compare_highest_price2 {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 		driver.navigate().to("https://www.woodenstreet.com/");
 		Actions act = new Actions(driver);
 		act.moveToElement(driver.findElement(By.xpath("//a[.='Dining']"))).perform();
@@ -32,7 +32,7 @@ public class compare_highest_price2 {
 
 		String price = driver.findElement(By.xpath("(//div[contains(@id,'article')])[3]//strong")).getText()
 				.replace(",", " ").replace("Rs ", "");
-		driver.findElement(By.xpath("(//div[contains(@id,'article')])[1]//span[@class='cart-tooltip']")).click();
+		driver.findElement(By.xpath("(//div[contains(@id,'article')])[1]//p[@class='cart-btn']")).click();
 		ArrayList<String> brandlist = new ArrayList<>();
 		brandlist.add(
 				driver.findElement(By.xpath("(//div[contains(@id,'article')])[1]//a[@class='by-brand']")).getText());
@@ -42,16 +42,17 @@ public class compare_highest_price2 {
 				break;
 			String xpath = "(//div[contains(@id,'article')])[" + i + "]//a[@class='by-brand']";
 			String brandName = driver.findElement(By.xpath(xpath)).getText();
+			//jse.executeScript("window.scrollBy(0,500)");
 			if (brandlist.contains(brandName)) {
 				continue;
 			} else {
 				brandlist.add(brandName);
-				driver.findElement(By.xpath("(//div[contains(@id,'article')])[" + i + "]//span[@class='cart-tooltip']"))
-				.click();
+				driver.findElement(By.xpath("(//div[contains(@id,'article')])[" + i + "]//p[@class='cart-btn']")).click();
 				itemcart++;
 			}
 			System.out.println(itemcart);
 		}
+		System.out.println(brandlist);
 		jse.executeScript("window.scrollTo(0,0)");
 		driver.findElement(By.xpath("//a[@title='Cart']")).click();
 		int[] price1 = new int[3];

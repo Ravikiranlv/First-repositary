@@ -1,163 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Browser is succesfully launched]]>
-    </line>
-    <line>
-      <![CDATA[Browser window is mazimized Succesfully]]>
+      <![CDATA[Close]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-01-04T17:47:22 IST" name="Default suite" finished-at="2023-01-04T17:47:33 IST" duration-ms="10972">
+  <suite started-at="2023-02-08T10:52:54 IST" name="Default suite" finished-at="2023-02-08T10:53:46 IST" duration-ms="52379">
     <groups>
     </groups>
-    <test started-at="2023-01-04T17:47:22 IST" name="Default test" finished-at="2023-01-04T17:47:33 IST" duration-ms="10972">
-      <class name="REDIFF_assignment_mail.Rediff_assignment">
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:REDIFF_assignment_mail.Rediff_assignment@625732]" started-at="2023-01-04T17:47:22 IST" name="LaunchBrowser" finished-at="2023-01-04T17:47:33 IST" duration-ms="10910" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: net::ERR_CONNECTION_CLOSED
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-VO7LGM5', ip: '10.10.61.27', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ravik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1762}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e93c5eb6f9dc31c166e0a912c5a895e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_CLOSED
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-VO7LGM5', ip: '10.10.61.27', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ravik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1762}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e93c5eb6f9dc31c166e0a912c5a895e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
-at REDIFF_assignment_mail.data_providing_to_scriptFlow.LaunchBrowser(data_providing_to_scriptFlow.java:32)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+    <test started-at="2023-02-08T10:52:54 IST" name="Default test" finished-at="2023-02-08T10:53:46 IST" duration-ms="52379">
+      <class name="capter_screen_shot.Base_Test1">
+        <test-method is-config="true" signature="Browser_Setup(java.lang.String)[pri:0, instance:capter_screen_shot.Base_Test1@15aab8c6]" started-at="2023-02-08T10:52:54 IST" name="Browser_Setup" finished-at="2023-02-08T10:53:19 IST" duration-ms="24450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_Setup -->
+        <test-method signature="Browser_Setup(java.lang.String)[pri:0, instance:capter_screen_shot.Base_Test1@15aab8c6]" started-at="2023-02-08T10:53:19 IST" name="Browser_Setup" finished-at="2023-02-08T10:53:44 IST" duration-ms="25048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser_Setup -->
+        <test-method is-config="true" signature="Browser_tear_down(org.testng.ITestResult)[pri:0, instance:capter_screen_shot.Base_Test1@15aab8c6]" started-at="2023-02-08T10:53:44 IST" name="Browser_tear_down" finished-at="2023-02-08T10:53:46 IST" duration-ms="2842" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Browser_Setup status=SUCCESS method=Base_Test1.Browser_Setup(java.lang.String)[pri:0, instance:capter_screen_shot.Base_Test1@15aab8c6] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[Browser is succesfully launched]]>
-            </line>
-            <line>
-              <![CDATA[Browser window is mazimized Succesfully]]>
+              <![CDATA[Close]]>
             </line>
           </reporter-output>
-        </test-method> <!-- LaunchBrowser -->
-        <test-method signature="scriptFlow()[pri:0, instance:REDIFF_assignment_mail.Rediff_assignment@625732]" started-at="2023-01-04T17:47:33 IST" name="scriptFlow" finished-at="2023-01-04T17:47:33 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: net::ERR_CONNECTION_CLOSED
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-VO7LGM5', ip: '10.10.61.27', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ravik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1762}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e93c5eb6f9dc31c166e0a912c5a895e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_CLOSED
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-VO7LGM5', ip: '10.10.61.27', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ravik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1762}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e93c5eb6f9dc31c166e0a912c5a895e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
-at REDIFF_assignment_mail.data_providing_to_scriptFlow.LaunchBrowser(data_providing_to_scriptFlow.java:32)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scriptFlow -->
-        <test-method is-config="true" signature="close()[pri:0, instance:REDIFF_assignment_mail.Rediff_assignment@625732]" started-at="2023-01-04T17:47:33 IST" name="close" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1672834653568" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- REDIFF_assignment_mail.Rediff_assignment -->
+        </test-method> <!-- Browser_tear_down -->
+      </class> <!-- capter_screen_shot.Base_Test1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
