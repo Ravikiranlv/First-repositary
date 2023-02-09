@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="REDIFF_assignment_mail.Rediff_assignment">
+      <class name="capter_screen_shot.Base_Test1">
         <methods>
-          <include name="scriptFlow"/>
-          <include name="LaunchBrowser"/>
-          <include name="close"/>
+          <include name="Browser_Setup"/>
+          <include name="Browser_Setup"/>
+          <include name="Browser_tear_down"/>
         </methods>
-      </class> <!-- REDIFF_assignment_mail.Rediff_assignment -->
+      </class> <!-- capter_screen_shot.Base_Test1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

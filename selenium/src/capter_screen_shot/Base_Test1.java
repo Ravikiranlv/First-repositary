@@ -21,7 +21,7 @@ public class Base_Test1 {
 	public static WebDriver driver;
 
 	@Parameters("browser")
-	@BeforeClass(alwaysRun=true)
+	@BeforeClass(alwaysRun = true)
 	@Test
 	public void Browser_Setup(@Optional("chrome") String browserName) {
 		System.out.println(browserName);
@@ -41,9 +41,9 @@ public class Base_Test1 {
 		driver.get(url);
 	}
 
-	@AfterMethod(alwaysRun=true)
+	@AfterMethod(alwaysRun = true)
 	public void Browser_tear_down(ITestResult result) throws InterruptedException {
-		Reporter.log("Close",true);
+		Reporter.log("Close", true);
 		Thread.sleep(2000);
 		driver.quit();
 	}
