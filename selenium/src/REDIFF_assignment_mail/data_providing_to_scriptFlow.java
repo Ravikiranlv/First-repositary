@@ -24,7 +24,7 @@ public class data_providing_to_scriptFlow
 	@BeforeMethod
 	public void LaunchBrowser()
 	{
-		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver2.exe");
 	    driver=new ChromeDriver();
 		Reporter.log("Browser is succesfully launched");
 		driver.manage().window().maximize();

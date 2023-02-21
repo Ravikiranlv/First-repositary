@@ -23,16 +23,16 @@ public class Base_Test1 {
 	@Parameters("browser")
 	@BeforeClass(alwaysRun = true)
 	@Test
-	public void Browser_Setup(@Optional("chrome") String browserName) {
+	public void Browser_Setup(@Optional("Chrome") String browserName) {
 		System.out.println(browserName);
 		if (browserName.equalsIgnoreCase("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver1.exe");
+			System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver2.exe");
 			driver = new ChromeDriver();
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
 			System.setProperty("webdriver.gecko.driver", "./softwares/geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else {
-			System.setProperty("webdriver.edge.driver", "./softwares/msedgedriver.exe");
+			System.setProperty("webdriver.msedge.driver", "./softwares/msedgedriver.exe");
 			driver = new EdgeDriver();
 		}
 		String url = "https://www.redbus.in/bus-tickets/";

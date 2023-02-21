@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="capter_screen_shot.Base_Test1">
+      <class name="testng_using_framework.testscript_action">
         <methods>
-          <include name="Browser_Setup"/>
-          <include name="Browser_Setup"/>
-          <include name="Browser_tear_down"/>
+          <include name="scriptflow"/>
+          <include name="openapp"/>
+          <include name="closeapp"/>
         </methods>
-      </class> <!-- capter_screen_shot.Base_Test1 -->
+      </class> <!-- testng_using_framework.testscript_action -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

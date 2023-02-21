@@ -32,9 +32,9 @@ public class Time_tracck1 {
 	}
 	@BeforeMethod
 	public void  LoginToApp()
-	//Step 1:navigate to Application
+	//Step 1:navigate to Application	
 	{
-		driver.navigate().to("http://localhost/login.do");
+		driver.navigate().to("https://online.actitime.com/softeg/login.do");
 		String expectedLoginPageTitle = "actiTIME - Login";
 		String actualLoginPageTitle = driver.getTitle();
 		if(expectedLoginPageTitle.equalsIgnoreCase(actualLoginPageTitle))
@@ -47,8 +47,8 @@ public class Time_tracck1 {
 		}
 		
 		//Step 2:Enter the valid Username and valid password
-		String usernameData = "admin";
-		String passwordData = "manager";
+		String usernameData = "ravikiranlv16@gmail.com";
+		String passwordData = "9353608818";
 		WebElement userNameTextField = driver.findElement(By.name("username"));
 		userNameTextField.sendKeys(usernameData);
 		String actualUsernameEnterd = userNameTextField.getAttribute("value");

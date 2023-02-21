@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class COMPARE {
 	    public static void main(String[] args) {
 	        // set up Chrome driver
-	        System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver1.exe");
+	        System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver2.exe");
 	        WebDriver driver = new ChromeDriver();
 	        driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

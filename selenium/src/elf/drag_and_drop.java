@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class drag_and_drop {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver2.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		
@@ -21,11 +21,12 @@ public class drag_and_drop {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		WebDriverWait wait=new WebDriverWait(driver, 10);
 	 	wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//input[@id='user']")))).sendKeys("ravikiranlv16@gmail.com");
-		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("password"))));
-		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//input[@id='login']")))).click();
-		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//input[@aria-labelledby='password-uid1-label password-uid1-helper password-uid1-valid password-uid1-error']")))).sendKeys("Ravikiranlv@16");
-		driver.findElement(By.id("login-submit")).click();
-		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//div[.='study'])[2]")))).click();
+	 	wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("login")))).click();
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("password")))).sendKeys("Ravikiranlv@16");
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//span[text()='Log in']")))).click();
+	//	wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//input[@aria-labelledby='password-uid1-label password-uid1-helper password-uid1-valid password-uid1-error']")))).sendKeys("Ravikiranlv@16");
+	//	driver.findElement(By.id("login-submit")).click();
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='boards-page-board-section-header']/..//div[text()='study']")))).click();
 		Thread.sleep(3000);
 		Actions act=new Actions(driver);
 		WebElement text = driver.findElement(By.xpath("(//span[contains(.,'Ndrk IT')])[1]"));
@@ -36,5 +37,4 @@ public class drag_and_drop {
 		Thread.sleep(3000);
 		act.release().perform();
 	}
-
 }

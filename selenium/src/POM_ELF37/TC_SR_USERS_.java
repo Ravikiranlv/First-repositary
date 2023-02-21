@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 public class TC_SR_USERS_ {
 	@Test(groups = "Smoke")
 	public void createUsers() {
-		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver2.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

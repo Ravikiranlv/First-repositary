@@ -21,7 +21,7 @@ public class TC_Demo_login_002 {
 
 	@Test(dataProvider = "testDataForcredentials")
 	public void loginWithMultipleCredentials(String[] arr) {
-		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver2.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

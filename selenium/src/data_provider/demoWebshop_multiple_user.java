@@ -27,7 +27,7 @@ public class demoWebshop_multiple_user {
    @Test(dataProvider="testDataForcredentials")
    public void LoginWithMultipleCredentials(String [] arr)
    {
-	   System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver.exe");
+	   System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver2.exe");
 	   WebDriver driver=new ChromeDriver();
 	   driver.manage().window().maximize();
 	   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -40,7 +40,7 @@ public class demoWebshop_multiple_user {
 	   driver.findElement(By.id("Email")).sendKeys(arr[2]);
 	   driver.findElement(By.id("Password")).sendKeys(arr[3]);
 	   driver.findElement(By.id("ConfirmPassword")).sendKeys(arr[4]);
-	   driver.findElement(By.id("register-button")).sendKeys(arr[5]);
+	   driver.findElement(By.id("register-button")).click();
 	   
    }
 }

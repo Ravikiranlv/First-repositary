@@ -20,7 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class compare_highest_price {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver1.exe");
+		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver2.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
