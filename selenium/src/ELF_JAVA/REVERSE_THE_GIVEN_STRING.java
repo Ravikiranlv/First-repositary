@@ -11,10 +11,10 @@ public class REVERSE_THE_GIVEN_STRING {
 		String str = sc.nextLine();
 
 		String[] strArray = str.split(" ");
-		// int t = strArray.length;
-		// for (String temp : strArray) {
-		// System.out.println(temp);
-		// }
+		int t = strArray.length;
+		for (String temp : strArray) {
+		System.out.println(temp);
+		}
 
 		for (int i = 0; i < strArray.length; i++) {
 			char[] s1 = strArray[i].toCharArray();
