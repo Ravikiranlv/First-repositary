@@ -27,9 +27,9 @@ public class compare_highest_price2 {
 		act.moveToElement(driver.findElement(By.xpath("//a[text()='Dining & Kitchen']"))).perform();
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[text()='Iconic Chairs ']")))).click();
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("window.scrollBy(0,500)");
+		//jse.executeScript("window.scrollBy(0,500)");
 		
-		act.moveToElement(driver.findElement(By.xpath("//a[text()=' Study & Office ']"))).perform();
+		act.moveToElement(driver.findElement(By.xpath("//a[text()=' Study & Office ']"))).build().perform();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[text()='Gaming Chairs']")).click();
 
